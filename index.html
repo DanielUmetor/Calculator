@@ -3,29 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculator</title>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Black Calculator</title>
 </head>
 <body>
     <div class="calculator">
-        <input type="text" id="display" readonly>
-        <div class="keys">
-          <button onclick="display('7')">7</button>
-          <button onclick="display('9')">9</button>
-          <button onclick="display('+')">+</button>
-          <button onclick="display('4')">4</button>
-          <button onclick="display('5')">5</button>
-          <button onclick="display('6')">6</button>
-          <button onclick="display('-')">-</button>
-          <button onclick="display('1')">1</button>
-          <button onclick="display('2')">2</button>
-          <button onclick="display('3')">3</button>
-          <button onclick="display('X')">X</button>
-          <button onclick="display('0')">0</button>
-          <button onclick="display(C)">C</button>
-          <button onclick="calculate(=)">=</button>
-          <button onclick="display('/')">/</button>
-        </div>
+        <h3>CASIO</h3>
+        <input type="text" id="display" disabled>
+        <input type="button" value="7" onclick="appendToDisplay('7')">
+        <input type="button" value="8" onclick="appendToDisplay('8')">
+        <input type="button" value="9" onclick="appendToDisplay('9')">
+        <input type="button" value="/" onclick="appendToDisplay('/')">
+        <br>
+        <input type="button" value="4" onclick="appendToDisplay('4')">
+        <input type="button" value="5" onclick="appendToDisplay('5')">
+        <input type="button" value="6" onclick="appendToDisplay('6')">
+        <input type="button" value="*" onclick="appendToDisplay('*')">
+        <br>
+        <input type="button" value="1" onclick="appendToDisplay('1')">
+        <input type="button" value="2" onclick="appendToDisplay('2')">
+        <input type="button" value="3" onclick="appendToDisplay('3')">
+        <input type="button" value="-" onclick="appendToDisplay('-')">
+        <br>
+        <input type="button" value="0" onclick="appendToDisplay('0')">
+        <input type="button" value="." onclick="appendToDisplay('.')">
+        <input type="button" value="=" onclick="calculate()">
+        <input type="button" value="+" onclick="appendToDisplay('+')">
+        <br>
+        <input type="button" value="C" onclick="clearDisplay()">
     </div>
-    
+    <script src="script/script.js"></script>
 </body>
 </html>
